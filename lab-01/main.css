@@ -15,6 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
+    scroll-behavior: smooth;
 }
 /* remember to define focus styles! */
 :focus {
@@ -44,6 +45,7 @@ blockquote, q {
 :root {
     --main-dark: #1b1b1b;
     --main-green: #38ccae;
+    --green-hover:#9affeb;
     --main-white: #f1efef;
     --paragraph-font: 4vh;
     --paragraph-font-special: 4.5vh;
@@ -54,24 +56,28 @@ body{
     background: var(--main-dark);
     color: var(--main-white);
 }
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .section{
     min-height: 100vh;
-}
-.section--info{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.section__header--info{
+.section__header{
     display: flex;
     flex-direction: column;
+    max-width: 50vw;
 }
 .section__h1{
     font-size: 8vh;
     font-weight: 700;
     margin: 16px 0 16px 0;
 }
-.section__image--info{
+.section__image{
     width: 22.5vw;
     height: 35vw;
     margin: 32px;
@@ -89,4 +95,8 @@ body{
     color: var(--main-green);
     font-weight: 700;
     font-size: var(--paragraph-font-special);
+    transition: color ease-in-out 0.25s;
+}
+.section__link--info:hover{
+    color: var(--green-hover);   
 }
