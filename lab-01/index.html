@@ -13,20 +13,27 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
+    <script src="main.js"></script>
   </head>
   <body class="body">
     <main class="main">
       <section id="info" class="section section--info">
         <img
-          class="section__image section__image--info"
+          class="section__image section__image--info section__image--js"
           src="./img/coffee_beans.svg"
           alt="coffee beans"
         />
-        <header class="section__header section__header--info">
-          <h1 class="section__h1">
-            We are <span class="section__special">The Brewers</span>
-          </h1>
-          <p class="section__paragraph section__paragraph--info">
+        <div class="section__container section__container--info">
+          <header
+            class="section__header section__header--info section__header--js"
+          >
+            <h1 class="section__h1">
+              We are <span class="section__special">The Brewers</span>
+            </h1>
+          </header>
+          <p
+            class="section__paragraph section__paragraph--info section__paragraph--js"
+          >
             Checkout our
             <a href="#products" class="section__link section__link--info"
               >products</a
@@ -41,30 +48,72 @@
               >contact us.</a
             >
           </p>
-        </header>
+        </div>
       </section>
-      <section id="products" class="section section--products"></section>
+      <section id="products" class="section section--products">
+        <header
+          class="section__header section__header--products section__header--js"
+        >
+          <h2 class="section__h2 section__special">
+            See what we have to offer
+          </h2>
+        </header>
+        <div class="section__container section__container--about">
+          <div class="section__product section__product--basic">
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+          <div class="section__product section__product--premium">
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+          <div class="section__product section__product--elite">
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </section>
       <section id="about" class="section section--about">
         <img
-          class="section__image section__image--about"
+          class="section__image section__image--about section__image--js"
           src="./img/question_mark.svg"
           alt="question mark"
         />
-        <header class="section__header section__header--about">
-          <h2 class="section__h2 section__special">Who are we exactly?</h2>
-          <p class="section__paragraph section__paragraph--about">
+        <div class="section__container section__container--about">
+          <header
+            class="section__header section__header--about section__header--js"
+          >
+            <h2 class="section__h2 section__special">Who are we exactly?</h2>
+          </header>
+          <p
+            class="section__paragraph section__paragraph--about section__paragraph--js"
+          >
             We are group of coffee enthusiasts located in Cracov. We love coffee
             speciality and sharing it with you with our products and trainings
           </p>
-        </header>
+        </div>
       </section>
       <section id="contact" class="section section--contact">
-        <header class="section__header section__header--contact">
+        <header
+          class="section__header section__header--contact section__header--js"
+        >
           <h3 class="section__h3 section__special">
             Check us out and lets go on coffee together!
           </h3>
         </header>
-        <div class="section__container">
+        <div class="section__container section__container--contact">
           <div class="section__tile section__tile--facebook">
             <img
               class="section__image section__image--contact"
