@@ -131,7 +131,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* animation: popUp 1s 1s forwards ease-in-out; */
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+.section--active {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
 }
 
 .section--products {
