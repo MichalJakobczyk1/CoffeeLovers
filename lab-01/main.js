@@ -1,13 +1,14 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add("section--active");
-    } else {
-      entry.target.classList.remove("section--active");
-    }
-  });
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting)
+        entry.target.style.animation = `popUp 0.75s 0.5s forwards ease-in-out`;
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
 
 const sections = document.querySelectorAll(".section");
 

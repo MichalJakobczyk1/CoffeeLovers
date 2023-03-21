@@ -2,15 +2,12 @@
 @keyframes popUp {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
     transform: translateY(0px);
   }
-}
-.popUp {
-  animation: popUp 1s 1s forwards ease-in-out;
 }
 /* normalization */
 html,
@@ -131,16 +128,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
-  transition: opacity 1s;
-}
-
-.section--active {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
+  opacity: 0;
+  animation: none;
 }
 
 .section--products {
