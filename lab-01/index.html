@@ -13,28 +13,31 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body class="body">
     <main class="main">
-      <a class="go-back"><div class="main__container"><img class="main__container-image" src="./img/arrow.svg"/></div></a>
+      <a href="#info" class="main__return"
+        ><div class="main__container">
+          <img
+            class="main__container-image"
+            src="./img/arrow.svg"
+            alt="arrow upwards"
+          /></div
+      ></a>
       <section id="info" class="section section--info">
         <img
-          class="section__image section__image--info section__image--js"
+          class="section__image section__image--info"
           src="./img/coffee_beans.svg"
           alt="coffee beans"
         />
         <div class="section__container section__container--info">
-          <header
-            class="section__header section__header--info section__header--js"
-          >
+          <header class="section__header section__header--info">
             <h1 class="section__h1">
               We are <span class="section__special">The Brewers</span>
             </h1>
           </header>
-          <p
-            class="section__paragraph section__paragraph--info section__paragraph--js"
-          >
+          <p class="section__paragraph section__paragraph--info">
             Checkout our
             <a href="#products" class="section__link section__link--info"
               >products</a
@@ -52,41 +55,70 @@
         </div>
       </section>
       <section id="products" class="section section--products">
-        <header
-          class="section__header section__header--products section__header--js"
-        >
-          <h2 class="section__h2 section__special">
+        <header class="section__header section__header--products">
+          <h2 class="section__h2 section__h2--products section__special">
             See what we have to offer
           </h2>
         </header>
         <div class="section__container section__container--products">
           <div class="section__product section__product--basic">
-            <h3 class="section__h3 section__h3--product">Basic</h3>
+            <header class="section__header section__header--product">
+              <h3 class="section__h3 section__h3--product">Basic</h3>
+            </header>
             <ol class="section__list">
-              <li class="section__list-item">Access to our training once per month</li>
+              <li class="section__list-item">
+                Access to our training once per month
+              </li>
               <li class="section__list-item">5% cashback in our store</li>
-              <li class="section__list-item">Basic materials and videos for selflearning</li>
+              <li class="section__list-item">
+                Basic materials and videos for selflearning
+              </li>
             </ol>
             <span class="section__product-price">44.90 per month</span>
           </div>
           <div class="section__product section__product--premium">
-            <h3 class="section__h3 section__h3--product"><img class="section__image section__image--product" src="./img/premium.svg"/>Premium</h3>
+            <header class="section__header section__header--product">
+              <img
+                class="section__image section__image--product"
+                src="./img/premium.svg"
+              />
+              <h3 class="section__h3 section__h3--premium">Premium</h3>
+            </header>
             <ol class="section__list">
-              <li class="section__list-item">Access to our training twice per month</li>
+              <li class="section__list-item">
+                Access to our training twice per month
+              </li>
               <li class="section__list-item">10% discount in our store</li>
-              <li class="section__list-item">Access to our group on facebook</li>
-              <li class="section__list-item">Access to cupping once per month</li>
+              <li class="section__list-item">
+                Access to our group on facebook
+              </li>
+              <li class="section__list-item">
+                Access to cupping once per month
+              </li>
             </ol>
             <span class="section__product-price">74.90 per month</span>
           </div>
           <div class="section__product section__product--elite">
-            <h3 class="section__h3 section__h3--product"><img class="section__image section__image--product" src="./img/elite.svg"/>Elite</h3>
+            <header class="section__header section__header--product">
+              <img
+                class="section__image section__image--product"
+                src="./img/elite.svg"
+              />
+              <h3 class="section__h3 section__h3--product">Elite</h3>
+            </header>
+
             <ol class="section__list">
-              <li class="section__list-item">Unlimited access to our trainings</li>
+              <li class="section__list-item">
+                Unlimited access to our trainings
+              </li>
               <li class="section__list-item">20% discount in our store</li>
               <li class="section__list-item">Unlimited access to cuppings</li>
-              <li class="section__list-item">Access to special materials for selflearning</li>
-              <li class="section__list-item">Private training once per month</li>
+              <li class="section__list-item">
+                Access to special materials for selflearning
+              </li>
+              <li class="section__list-item">
+                Private training once per month
+              </li>
             </ol>
             <span class="section__product-price">110.90 per month</span>
           </div>
@@ -94,64 +126,80 @@
       </section>
       <section id="about" class="section section--about">
         <img
-          class="section__image section__image--about section__image--js"
+          class="section__image section__image--about"
           src="./img/question_mark.svg"
           alt="question mark"
         />
         <div class="section__container section__container--about">
-          <header
-            class="section__header section__header--about section__header--js"
-          >
+          <header class="section__header section__header--about">
             <h2 class="section__h2 section__special">Who are we exactly?</h2>
           </header>
-          <p
-            class="section__paragraph section__paragraph--about section__paragraph--js"
-          >
-            We are group of coffee enthusiasts located in Cracov. We love coffee
-            speciality and sharing it with you with our products and trainings
+          <p class="section__paragraph section__paragraph--about">
+            Krakow's coffee specialty enthusiasts are a passionate group of
+            individuals with a deep appreciation for high-quality coffee and the
+            culture that surrounds it. They are knowledgeable about different
+            brewing methods, enjoy latte art, and are always on the lookout for
+            new and innovative techniques. They value the social aspect of the
+            coffee culture and enjoy meeting like-minded individuals to share
+            experiences and attend coffee events. This community is a vibrant
+            and passionate group of individuals who are proud to be part of the
+            coffee culture in Krakow.
           </p>
         </div>
       </section>
       <section id="contact" class="section section--contact">
-        <header
-          class="section__header section__header--contact section__header--js"
-        >
-          <h3 class="section__h3 section__special">
+        <header class="section__header section__header--contact">
+          <h2 class="section__h2 section__h2--contact section__special">
             Check us out and lets go on coffee together!
-          </h3>
+          </h2>
         </header>
         <div class="section__container section__container--contact">
           <div class="section__tile section__tile--facebook">
-            <img
-              class="section__image section__image--contact"
-              src="./img/facebook.svg"
-              alt="facebook icon"
-            />
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="section__link section__link--contact"
+            >
+              <img
+                class="section__image section__image--contact"
+                src="./img/facebook.svg"
+                alt="facebook icon"
+              />
+            </a>
             <p class="section__paragraph section__paragraph--contact">
               Check our facebook for news and posts
-              <a class="section__link section__link--contact"></a>
             </p>
           </div>
           <div class="section__tile section__tile--instagram">
-            <img
-              class="section__image section__image--contact"
-              src="./img/instagram.svg"
-              alt="instagram icon"
-            />
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="section__link section__link--contact"
+            >
+              <img
+                class="section__image section__image--contact"
+                src="./img/instagram.svg"
+                alt="instagram icon"
+              />
+            </a>
             <p class="section__paragraph section__paragraph--contact">
               Our instagram for relations and photos from trainings
-              <a class="section__link section__link--contact"></a>
             </p>
           </div>
           <div class="section__tile section__tile--tiktok">
-            <img
-              class="section__image section__image--contact"
-              src="./img/tiktok.svg"
-              alt="tiktok icon"
-            />
+            <a
+              href="https://www.tiktok.com/"
+              target="_blank"
+              class="section__link section__link--contact"
+            >
+              <img
+                class="section__image section__image--contact"
+                src="./img/tiktok.svg"
+                alt="tiktok icon"
+              />
+            </a>
             <p class="section__paragraph section__paragraph--contact">
               And our tiktok for funny videos from our staff!
-              <a class="section__link section__link--contact"></a>
             </p>
           </div>
         </div>
