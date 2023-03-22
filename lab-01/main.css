@@ -125,6 +125,28 @@ body {
   --paragraph-font: 4vh;
   --paragraph-font-special: 4.5vh;
 }
+
+.go-back {
+  display: none;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--main-green);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.main__container-image {
+  width: 7.5vw;
+  height: 10vh;
+}
 /* sections */
 .section {
   min-height: 100vh;
