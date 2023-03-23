@@ -10,8 +10,15 @@ const observer = new IntersectionObserver(
   }
 );
 
+// const arrow = document.querySelector(".main__container");
+// const arrowTrigger = document.querySelector(".section__container--products");
+// const arrowObserver = new IntersectionObserver((entry) => {
+//   if (entry.isIntersecting) console.log("Works");
+// });
+
 const sections = document.querySelectorAll(".section");
 
 sections.forEach((section) => {
   observer.observe(section);
 });
+// arrowObserver.observe(arrowTrigger);
