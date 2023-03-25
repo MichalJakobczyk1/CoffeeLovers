@@ -9,20 +9,6 @@
     transform: translateY(0px);
   }
 }
-@keyframes slide {
-  0% {
-    left: -100;
-    top: 0;
-  }
-  50% {
-    left: 120px;
-    top: 0px;
-  }
-  100% {
-    left: 290px;
-    top: 0;
-  }
-}
 
 /* normalization */
 html,
@@ -139,6 +125,34 @@ body {
   --paragraph-font-mobile: 3vh;
   --paragraph-font-special-mobile: 3.5vh;
   --tablet: 768px;
+}
+
+.lang {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+.lang__button {
+  border: none;
+  margin: 0;
+  padding: 2px 4px;
+  background: transparent;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  font-size: 2vh;
+  cursor: pointer;
+  color: var(--main-green);
+  font-weight: 700;
+  font-size: 2vh;
+  transition: color ease-in-out 0.25s;
+}
+
+.lang__button:hover {
+  color: var(--green-hover);
 }
 
 .main__container {
@@ -336,6 +350,11 @@ a {
   flex-direction: column;
   max-width: 50vw;
 }
+
+.section__container--info {
+  animation: none;
+}
+
 .section__container--products {
   display: flex;
   flex-direction: row;
